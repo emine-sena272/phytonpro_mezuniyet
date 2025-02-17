@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  >
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <title>Çevre dostu ol!!!</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__text">
+      <h1>Çevrenizi ne kadar koruduğunuzu hesaplayın!</h1>
+      <p>Girişimde bulunun ve çevre kirliliği sorununu çözün!</p>
+    </div>
+  </header>
+  <main>
+    {% block content %}
+    <h2 class="main__title">Ulaşım için genelde hangi taşıtı kullanıyorsun??</h2>
+    <ul class="list" id="list">
+      <!-- Görev #3 -->
+      <li class="list__item">
+        <a href="{{lights + '/6' }}">
+          <img class="item__img" src="../static/img/araba-removebg-preview.png" alt="battery">
+          <span>bisiklet yada yürüyerek!</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{lights + '/7' }}">
+          <img class="item__img" src="../static/img/araba-removebg-preview.png" alt="battery">
+          <span>toplu taşımaaa!</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{lights + '/8' }}">
+          <img class="item__img" src="../static/img/araba-removebg-preview.png" alt="battery">
+          <span>kişisel arabam var(zenginim)</span></a>
+      </li>
+      <!--  -->
+    </ul>
+    {% endblock %}
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>
